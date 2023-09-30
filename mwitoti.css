@@ -1,0 +1,66 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+
+   
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #250b0b; /* Choose your preferred background color */
+    color:#490e0e; /* Choose your preferred text color */
+    font-family: Arial, sans-serif; /* Choose a suitable font-family */
+    background: linear-gradient(to top,  rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)0%)url(1.jpeg);
+}
+
+/* Style the header */
+header {
+    background-color:rgb(87, 47, 47); /* Choose a header background color */
+    color: #ffffff; /* Text color for the header */
+    text-align:center;
+    padding: 20px;
+}
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style the sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff; /* Choose a section background color */
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 5px;
+    
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #2ba8f0; /* Choose a footer background color */
+    color: #fff;
+    padding: 10px;
+}
+
+/* Add specific styles for headings and links if needed */
+h1, h2 {
+    color: #2b2727;
+}
+
+a:hover {
+    text-decoration: underline;
+}
