@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATION</title>
+    <script language="javascript">
+        function validate() {
+            var uname, pwd, cpwd, email;
+            uname = document.forms("frm1").uname.value;
+            pwd = document.forms("frm1").pwd.value;
+            cpwd = document.forms("frm1").cpwd.value;
+            email = document.forms("frm1").email.value;
+            if (uname == "" || pwd == "" || cpwd == "" || email == "") {
+                alert("Enter all details");
+            }
+            elseif(uname.length < 8)
+            {
+                alert("Username must be atleast 8 characters");
+            }
+            elseif(pwd.length < 6)
+            {
+                alert("Password must be at least 6 characters");
+            }
+            elseif(pwd != cpwd)
+            {
+                alert("Passwords didn't match");
+            }
+            {
+                alert("Success");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm1" id="autocomplete">
+
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="uname"></input></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd"></input></td>
+            </tr>
+            <tr>
+                <td>confirm Password:</td>
+                <td><input type="password" name="cpwd"></input></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="text" name="email"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" .onclick="validate()" name="btn" value="submit">
+                </td>
+            </tr>
+    </form>
+</body>
+
+</html>
