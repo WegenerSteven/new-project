@@ -31,8 +31,8 @@ label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
     font-weight: bold;
+    float: left;
 
 }
 nav ul {
@@ -68,6 +68,21 @@ section {
     border: 1px solid #ddd; /* Add a border for separation */
     border-radius: 5px;
     
+}
+.department{
+text-align: center;
+}
+.departments-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    
+}
+.d-box{
+    border-style: double;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 /* Style the footer */
