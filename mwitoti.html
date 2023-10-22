@@ -36,16 +36,14 @@
     </script>
 
     <div class="header">
-        <marquee behavior="" direction="left">
-            <h1 style="color: aliceblue;">Welcome to St. Martha's Mwitoti secondary school</h1>
-        </marquee>
+        
         <div>
             <nav>
                 <label class="logo" img src="1.jpeg" alt="MMSS">MMSS</label>
 
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#department">Departments</a></li>
+                    <li><a href="#department.html">Departments</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#subjects">Subjects</a></li>
                     <li><a href="#news">News</a></li>
@@ -56,12 +54,15 @@
         </div>
 
         </header>
+        <marquee behavior="" direction="left">
+            <h1 style="color: aliceblue;">Welcome to St. Martha's Mwitoti secondary school</h1>
+        </marquee>
     </div>
 
     <section id="home">
         <section id="home">
             <h1 style="text-align: center;">HOME</h1>
-            <h2><a href="#home"></a></h2>
+
             <!-- Add home page content here -->
 
             <!-- Slideshow container -->
@@ -100,108 +101,135 @@
             </div>
         </section>
         <div class="department">
-            <section id="department">
-                <h1>DEPARTMENTS</h1>
-                <h2><a href="#department"></a></h2>
-                <div class="departments-container">
-                    <div class="d-box">
-                        <!--Add Department content here-->
-                        <div>
-                            <H2><a href="#department">Mathematics Department </a></H2>
-                            <p>Head of Department: Mr. John Doe</p>
-                            <p>Teachers:
-                            <ul>
-                                <li>Ms. Alice Smith</li>
-                                <li>Mr. James Wilson</li>
-                                <li>Ms. Emily Johnson</li>
-                            </ul>
-                            </p>
-                        </div>
+            <section id="department.html">
+                <h2>Departments</h2>
+                <div class="row">
+                    <div class="column" onclick="openTab('b1');" style="background:green;">
+                        Mathematics Department
                     </div>
-                    <div class="d-box">
-                        <h2><a href="#department">Science Department</a></h2>
-                        <!--Add Department content here-->
-
-                        <p>Head of Department: Mrs. Mary Brown</p>
-                        <p>Teachers:
-                        <ul>
-                            <li>Mr. David Lee</li>
-                            <li>Ms. Sarah Adams</li>
-                            <li>Mr. Robert Taylor</li>
-                        </ul>
-                        </p>
+                    <div class="column" onclick="openTab('b2');" style="background:blue;">
+                        Science Department
                     </div>
-                    <div class="d-box">
-                        <h2><a href="#department">Applied Sciences</a></h2>
-                        <!--Add Department content here-->
-
-                        <p>Head of Department: Dr. Susan Clark</p>
-                        <p>Teachers:
-                        <ul>
-                            <li>Mr. Michael Rogers</li>
-                            <li>Ms. Patricia Lewis</li>
-                            <li>Mr. Richard Brown</li>
-                        </ul>
-                        </p>
-
+                    <div class="column" onclick="openTab('b3');" style="background:red;">
+                        Applied Science
                     </div>
-                    <div class="d-box">
-                        <h2><a href="#department">Humanities Dapartment</a></h2>
-                        <!--Add Department content here-->
-
-                        <p>Head of Department: Mrs. Anna Johnson</p>
-                        <p>Teachers:
-                        <ul>
-                            <li>Mr. Charles Moore</li>
-                            <li>Ms. Olivia Davis</li>
-                            <li>Mr. Joseph Smith</li>
-                        </ul>
-                        </p>
+                    <div class="column" onclick="openTab('b4');" style="background:rgb(20, 141, 211);">
+                        Humanities Department
                     </div>
-                    <div class="d-box">
-                        <!--Add Department content here-->
-                        <div>
-                            <H2><a href="#department">Languages </a></H2>
-                            <h2>
-                                <h2><a href="#">Languages Department</a></h2>
-                            </h2>
-                            <p>Head of Department: Mr. William Green</p>
-                            <p>Teachers:
-                            <ul>
-                                <li>Ms. Jennifer Turner</li>
-                                <li>Mr. Daniel White</li>
-                                <li>Ms. Laura Parker</li>
-                            </ul>
-                            </p>
-                        </div>
+                    <div class="column" onclick="openTab('b5');" style="background:rgb(153, 226, 16);">
+                        Language Department
                     </div>
-                    <div class="d-box">
-                        <!--Add Department content here-->
-                        <div>
-                            <H2><a href="#department">Boarding</a></h2>
-                            <p>Head of Department: Mr. Peter Wilson</p>
-                            <p>Teachers:
-                            <ul>
-                                <li>Ms. Karen Adams</li>
-                                <li>Mr. Andrew Hall</li>
-                                <li>Ms. Linda Roberts</li>
-                            </ul>
-                            </p>
-                        </div>
+                    <div class="column" onclick="openTab('b6');" style="background:rgba(48, 52, 100, 0.267);">
+                        Boarding Department
                     </div>
-                    <div class="d-box">
-                        <!--Add Department content here-->
-                        <div>
-                            <H2><a href="#department">Library </a></H2>
-                        </div>
+                    <div class="column" onclick="openTab('b7');" style="background:rgba(235, 101, 11, 0.87);">
+                        Library
                     </div>
-                    <div class="d-box">
-                        <!--Add Department content here-->
-                        <div>
-                            <H2> <a href="#department">BOM </a></H2>
-                        </div>
+                    <div class="column" onclick="openTab('b8');" style="background:rgba(155, 16, 160, 0.877);">
+                        BOM
                     </div>
                 </div>
+
+                <!-- Full-width columns: (hidden by default) -->
+                <div id="b1" class="containerTab" style="display:none;background:green">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Mathematics Department</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div id="b2" class="containerTab" style="display:none;background:blue">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Science Department</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div id="b3" class="containerTab" style="display:none;background:red">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Applied Science</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="b4" class="containerTab" style="display:none;background:rgb(20, 141, 211)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Humanities Department</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="b5" class="containerTab" style="display:none;background:rgb(153, 226, 16)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>LanguageDepartment</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="b6" class="containerTab" style="display:none;background:rgba(48, 52, 100, 0.267)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Boarding Department</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="b7" class="containerTab" style="display:none;background:rgba(235, 101, 11, 0.87)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>Library</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="b8" class="containerTab" style="display:none;background:rgba(155, 16, 160, 0.877)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2>BOM</h2>
+                    <p>Head of Department: Mr. John Doe</p>
+                    <p>Teachers:
+                    <ul>
+                        <li>Ms. Alice Smith</li>
+                        <li>Mr. James Wilson</li>
+                        <li>Ms. Emily Johnson</li>
+                    </ul>
+                    </p>
+                </div>
+
             </section>
         </div>
         <section id="subjects">
